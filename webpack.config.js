@@ -14,6 +14,6 @@ module.exports = {
          },
       ],
    },
-   devtools: "inline-source-map",
+   devtool: "inline-source-map",
    mode: "development",
 };
