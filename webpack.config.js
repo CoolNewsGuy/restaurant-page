@@ -12,6 +12,14 @@ module.exports = {
             test: /\.css$/i,
             use: "css-loader",
          },
+         {
+            test: /\.ttf$/i,
+            type: "asset/resource",
+         },
+         {
+            test: /\.jpg$/i,
+            type: "asset/resource",
+         },
       ],
    },
    devtool: "inline-source-map",
