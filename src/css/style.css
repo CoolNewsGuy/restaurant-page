@@ -1,6 +1,13 @@
+@font-face {
+   font-family: tangerine;
+   src: url("../assets/TangerineBold.ttf"),
+      url("../assets/TangerineRegular.ttf");
+}
+
 * {
    box-sizing: border-box;
    margin: 0;
+   font-family: sans-serif;
 }
 
 html,
@@ -12,4 +19,37 @@ body {
    background: center/cover no-repeat fixed;
    background-image: linear-gradient(to right, #0003, #0003),
       url("../assets/background.jpg");
+}
+
+/* TODO navbar */
+nav {
+   background: #000a;
+   color: #fffe;
+   height: 68px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+ul {
+   width: 90%;
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo {
+   font-family: tangerine;
+   scale: 4;
+   align-self: center;
+}
+
+ul > *:not(.logo) {
+   font-size: 1.5rem;
+}
+
+ul .middle-elements {
+   display: flex;
+   justify-content: space-between;
+   width: 400px;
 }
