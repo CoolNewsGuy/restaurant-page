@@ -24,7 +24,7 @@ body {
 /* TODO home */
 #home {
    background: #000a;
-   height: 500px;
+   height: 550px;
    width: 400px;
    position: absolute;
    top: 50%;
@@ -44,7 +44,7 @@ body {
 }
 
 figure {
-   margin-bottom: 20px;
+   margin-bottom: 40px;
 }
 
 figure .pfp {
@@ -62,7 +62,7 @@ figure figcaption {
    width: 90%;
    margin: auto;
    line-height: 1.2;
-   margin-bottom: 20px;
+   margin-bottom: 40px;
 }
 
 .menu-btn {
@@ -71,6 +71,7 @@ figure figcaption {
    background: rgb(82, 255, 59);
    font-size: 1.2rem;
    padding: 10px 20px;
+   transition: 0.3s;
 }
 
 .menu-btn:hover {
