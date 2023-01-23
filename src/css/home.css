@@ -1,0 +1,55 @@
+#home {
+   background: #000a;
+   height: 550px;
+   width: 400px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   transform-origin: top center;
+   color: #fff;
+   text-align: center;
+   font-family: tangerine;
+}
+
+#home h1 {
+   font-family: inherit;
+   font-size: 3.5rem;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+figure {
+   margin-bottom: 40px;
+}
+
+figure .pfp {
+   border-radius: 50%;
+   height: 150px;
+   width: 150px;
+}
+
+figure figcaption {
+   font-style: italic;
+   color: #fffc;
+}
+
+.description {
+   width: 90%;
+   margin: auto;
+   line-height: 1.2;
+   margin-bottom: 40px;
+}
+
+.menu-btn {
+   cursor: pointer;
+   border: none;
+   background: rgb(82, 255, 59);
+   font-size: 1.2rem;
+   padding: 10px 20px;
+   transition: 0.3s;
+}
+
+.menu-btn:hover {
+   background: rgb(29, 212, 5);
+}
