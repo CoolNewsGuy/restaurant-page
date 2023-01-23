@@ -5,4 +5,4 @@ import "./css/style.css";
 
 let pageContent = document.getElementById("content");
 
-pageContent.append(Navbar());
+pageContent.insertBefore(Navbar(), document.querySelector(".home"));
