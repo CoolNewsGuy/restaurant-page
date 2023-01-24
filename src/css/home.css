@@ -1,12 +1,4 @@
 #home {
-   background: #000a;
-   height: 550px;
-   width: 400px;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   transform-origin: top center;
    color: #fff;
    text-align: center;
    font-family: tangerine;
