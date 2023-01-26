@@ -34,6 +34,15 @@ body {
    overflow-y: scroll;
 }
 
+#menu::-webkit-scrollbar {
+   background: rgb(13, 23, 36);
+}
+
+#menu::-webkit-scrollbar-thumb {
+   background: rgb(90, 91, 92);
+   border-radius: 20px;
+}
+
 .sub-menu {
    height: 100%;
    display: grid;
