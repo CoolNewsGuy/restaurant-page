@@ -57,6 +57,20 @@ function MenuButton() {
    menuBtn.setAttribute("class", "menu-btn");
    menuBtn.textContent = "Checkout menu";
 
+   function showMenu() {
+      let homeSection = document.querySelector("#home");
+      let menuSection = document.querySelector("#hidden-menu");
+
+      homeSection.setAttribute("class", "hidden-home");
+
+      setTimeout(() => {
+         homeSection.style.display = "none";
+         menuSection.id = "visible-menu";
+      }, 1000);
+   }
+
+   menuBtn.onclick = showMenu;
+
    return menuBtn;
 }
 
