@@ -5,11 +5,7 @@ function Navbar() {
    const nav = document.createElement("nav");
    const ul = document.createElement("ul");
 
-   ul.append(
-      NavElement("Castaurant"),
-      NavElement(["Home", "Menu", "About"], true),
-      NavElement("Contact")
-   );
+   ul.append(NavElement(["Home", "Menu", "Contact"], true));
 
    nav.appendChild(ul);
    header.appendChild(nav);
@@ -19,17 +15,6 @@ function Navbar() {
 
 function NavElement(elementTexts, areMiddleElements = false) {
    let navElement = document.createElement("li");
-
-   // for logo
-   if (elementTexts === "Castaurant") {
-      navElement.setAttribute("class", "logo");
-      navElement.textContent = elementTexts;
-   }
-   // for other elements
-   else if (!areMiddleElements) {
-      navElement.setAttribute("class", elementTexts.toLowerCase());
-      navElement.textContent = elementTexts;
-   }
 
    // for middle element
    if (areMiddleElements) {
