@@ -1,23 +1,5 @@
-/* TODO menu */
-/* ! this code will be removed later for the container */
 #menu {
-   background: #000b;
-   height: 550px;
-   width: 400px;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   overflow-y: scroll;
-}
-
-#menu::-webkit-scrollbar {
-   background: rgb(13, 23, 36);
-}
-
-#menu::-webkit-scrollbar-thumb {
-   background: rgb(90, 91, 92);
-   border-radius: 20px;
+   height: 100%;
 }
 
 .sub-menu {
