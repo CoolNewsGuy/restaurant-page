@@ -1,5 +1,11 @@
-#menu {
+#hidden-menu {
+   display: none;
+}
+
+#visible-menu {
    height: 100%;
+   display: initial;
+   animation: show-menu 1s;
 }
 
 .sub-menu {
@@ -35,4 +41,13 @@
 .food .price {
    font-size: 2rem;
    font-weight: bold;
+}
+
+@keyframes show-menu {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
 }

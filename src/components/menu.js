@@ -15,7 +15,7 @@ import CupcakeImg from "../assets/foods/cupcake.png";
 function Menu() {
    const sectionMenu = document.createElement("section");
 
-   sectionMenu.id = "menu";
+   sectionMenu.id = "hidden-menu";
    sectionMenu.append(SubMenu(1), SubMenu(2), SubMenu(3));
 
    return sectionMenu;
