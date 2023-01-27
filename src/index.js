@@ -10,4 +10,4 @@ let pageContent = document.getElementById("content");
 let sectionsContainer = Container();
 
 sectionsContainer.append(Home(), Menu());
-pageContent.append(Navbar(), sectionsContainer);
+pageContent.append(Navbar());
