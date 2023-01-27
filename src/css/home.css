@@ -4,6 +4,10 @@
    font-family: tangerine;
 }
 
+.hidden-home {
+   animation: hide-home 1s;
+}
+
 #home h1 {
    font-family: inherit;
    font-size: 3.5rem;
@@ -44,4 +48,13 @@ figure figcaption {
 
 .menu-btn:hover {
    background: rgb(29, 212, 5);
+}
+
+@keyframes hide-home {
+   from {
+      opacity: 1;
+   }
+   to {
+      opacity: 0;
+   }
 }
