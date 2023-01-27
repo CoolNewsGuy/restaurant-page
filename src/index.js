@@ -9,6 +9,5 @@ import Menu from "./components/menu";
 let pageContent = document.getElementById("content");
 let sectionsContainer = Container();
 
-// sectionsContainer.append(Home());
-pageContent.insertBefore(Navbar(), pageContent.lastElementChild);
-pageContent.append(Menu());
+sectionsContainer.append(Home(), Menu());
+pageContent.append(Navbar(), sectionsContainer);
