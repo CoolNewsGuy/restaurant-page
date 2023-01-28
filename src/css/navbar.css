@@ -5,6 +5,7 @@ nav {
    display: flex;
    justify-content: center;
    align-items: center;
+   z-index: -2;
 }
 
 ul {
@@ -18,27 +19,19 @@ ul {
 ul .middle-elements {
    display: flex;
    justify-content: space-between;
-   width: 400px;
+   width: 450px;
 }
 
 nav li {
    cursor: pointer;
    position: relative;
    overflow: hidden;
-}
-
-nav li::before {
-   content: "";
-   background: #aed;
-   position: absolute;
-   bottom: 0;
-   right: 100%;
-   width: 100%;
-   height: 2px;
+   border-radius: 20px;
+   z-index: 1;
+   padding: 5px 30px;
    transition: 0.2s;
 }
 
-nav li:hover::before {
-   right: 0;
-   overflow: visible;
+nav li:hover {
+   background: #fff;
 }
