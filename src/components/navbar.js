@@ -16,7 +16,7 @@ function Navbar() {
 function NavElement(elementTexts, areMiddleElements = false) {
    let navElement = document.createElement("li");
 
-   // for middle element
+   // for middle elements
    if (areMiddleElements) {
       const middleElementsDiv = document.createElement("div");
       middleElementsDiv.setAttribute("class", "middle-elements");
@@ -36,4 +36,23 @@ function NavElement(elementTexts, areMiddleElements = false) {
    return navElement;
 }
 
-export default Navbar;
+const currentTab = (() => {
+   function setHomeAsActiveTab() {
+      const home = document.querySelector(".middle-elements").children[0];
+      home.classList.add("current-tab");
+   }
+
+   function setMenuAsActiveTab() {
+      const menu = document.querySelector(".middle-elements").children[1];
+
+      document.querySelector(".home").classList.remove("current-tab");
+      menu.classList.add("current-tab");
+   }
+
+   return {
+      setHomeAsActiveTab,
+      setMenuAsActiveTab,
+   };
+})();
+
+export { Navbar as default, currentTab };
