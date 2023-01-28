@@ -35,3 +35,7 @@ nav li {
 nav li:hover {
    background: #fff;
 }
+
+.current-tab {
+   background: #fff;
+}
