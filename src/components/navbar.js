@@ -49,6 +49,20 @@ const currentTab = (() => {
       menu.classList.add("current-tab");
    }
 
+   function __change(e) {
+      document.querySelector(".current-tab").classList.remove("current-tab");
+      e.target.classList.add("current-tab");
+   }
+
+   window.onload = () => {
+      const middleElements =
+         document.querySelector(".middle-elements").children;
+
+      Array.from(middleElements).forEach(
+         (element) => (element.onclick = __change)
+      );
+   };
+
    return {
       setHomeAsActiveTab,
       setMenuAsActiveTab,
