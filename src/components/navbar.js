@@ -49,9 +49,35 @@ const currentTab = (() => {
       menu.classList.add("current-tab");
    }
 
-   function __change(e) {
+   function __changeSection(e) {
       document.querySelector(".current-tab").classList.remove("current-tab");
       e.target.classList.add("current-tab");
+
+      const currentTabText = e.target.textContent.toLowerCase();
+      const [homeSection, menuSection, contactSection] =
+         document.querySelectorAll(".container > *");
+
+      switch (currentTabText) {
+         case "home":
+            homeSection.removeAttribute("class");
+            menuSection.id = "hidden-menu";
+            contactSection.id = "hidden-contact";
+            homeSection.style.removeProperty("display");
+            break;
+
+         case "menu":
+         case "contact":
+            homeSection.setAttribute("class", "hidden-home");
+            homeSection.style.display = "none";
+
+            if (currentTabText === "menu") {
+               contactSection.id = "hidden-contact";
+               menuSection.id = "visible-menu";
+            } else {
+               menuSection.id = "hidden-menu";
+               contactSection.id = "visible-contact";
+            }
+      }
    }
 
    window.onload = () => {
@@ -59,7 +85,7 @@ const currentTab = (() => {
          document.querySelector(".middle-elements").children;
 
       Array.from(middleElements).forEach(
-         (element) => (element.onclick = __change)
+         (element) => (element.onclick = __changeSection)
       );
    };
 
