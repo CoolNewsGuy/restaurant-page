@@ -1,5 +1,6 @@
 import "../css/home.css";
 import Icon from "../assets/beluga.jpg";
+import { currentTab } from "./navbar";
 
 function Home() {
    const homeSection = document.createElement("section");
@@ -60,6 +61,8 @@ function MenuButton() {
    function showMenu() {
       let homeSection = document.querySelector("#home");
       let menuSection = document.querySelector("#hidden-menu");
+
+      currentTab.setMenuAsActiveTab();
 
       homeSection.setAttribute("class", "hidden-home");
 

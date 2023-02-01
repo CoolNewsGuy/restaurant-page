@@ -13,6 +13,11 @@ module.exports = {
             use: ["style-loader", "css-loader"],
          },
          {
+            test: /\.js$/i,
+            use: ["source-map-loader"],
+            enforce: "pre",
+         },
+         {
             test: /\.ttf$/i,
             type: "asset/resource",
          },
@@ -22,6 +27,6 @@ module.exports = {
          },
       ],
    },
-   devtool: "inline-source-map",
+   devtool: "source-map",
    mode: "development",
 };
